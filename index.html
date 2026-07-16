@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Abacería Cuartoo de Pasos - Carta Digital</title>
+    <meta name="description" content="Carta digital del primer bar cofrade de Écija. Tradición, incienso y sabor bajo palio.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="particles"></div>
+
+    <header id="main-header">
+        <div class="logo-container">
+            <img src="assets/logo.jpg" alt="Logo Cuartoo de Pasos" class="logo-img">
+            <div class="logo-text">
+                C. de Pasos
+                <span>Abacería</span>
+            </div>
+        </div>
+        
+        <div class="lang-selector">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="de">DE</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Abacería Cuartoo de Pasos</h1>
+        <p id="hero-text">El primer bar cofrade de Écija. Tradición, incienso y sabor bajo palio.</p>
+        <div class="divider"></div>
+    </section>
+
+    <main id="menu-container">
+        <!-- Categories injected via JS -->
+    </main>
+
+    <section class="location-section">
+        <div class="location-content">
+            <div class="location-card">
+                <h2 id="location-title">Ubicación</h2>
+                <div class="location-details">
+                    <p class="location-address">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span id="loc-address-text">Plaza de Santa María, 6, Écija</span>
+                    </p>
+                    <p class="location-hours">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <span id="loc-hours-text">Abierto todos los días</span>
+                    </p>
+                </div>
+                <a href="https://maps.google.com/?q=Abaceria+Cuartoo+de+Pasos+Ecija" target="_blank" class="directions-btn" id="directions-btn-text">
+                    <span>Cómo llegar</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+            </div>
+            <div class="map-wrapper">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 25 50 L 75 50 M 50 25 L 50 85 M 40 25 L 60 25" stroke="#D4AF37" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="footer-info">
+            <p>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span id="address-text">Plaza de Santa María, Écija</span>
+            </p>
+        </div>
+        <div class="allergens-warning">
+            <svg width="24" height="24" style="margin: 0 auto 10px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <span id="allergen-text">Tenemos a su disposición la información sobre alérgenos. Pregunte a nuestro personal.</span>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
